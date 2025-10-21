@@ -114,6 +114,7 @@ function Navbar() {
   Get Started
   <FaArrowRightLong className="mt-1" size={18} />
 </Link>
+
       </div>
 
       <div className="w-full h-[1px] bg-white opacity-40"></div>

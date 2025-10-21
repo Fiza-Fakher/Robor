@@ -9,7 +9,7 @@ import ProjectDetail from './pages/project-detail';
 import Contact from "./pages/contact/index";
 import BlogPage from "./pages/blog/index";
 import BlogDetail from './pages/blog-detail/index';
-import Team from "./pages/contact/index";
+import Team from "./pages/team/index"
 import AiConsulting from './pages/ai-consulting';
 
 

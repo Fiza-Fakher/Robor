@@ -9,12 +9,14 @@ import Team from '../../components/about/Team'
 function About() {
   return (
     <>
+    <div className="overflow-x-hidden w-full">
     <Hero/> 
     <AboutUs/>
     <Process/>
+    <Team/>
     <FAQ/>
     <Blog/>
-     <Team/>
+     </div>
     </>
   )
 }

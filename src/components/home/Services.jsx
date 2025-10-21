@@ -30,27 +30,29 @@ function Services() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 lg:gap-10 mt-14">
-          {serviceCards.map((item, index) => (
-            <Link to={`/services/${item.slug}`} key={index}>
-              <div
-                className="h-76 w-full lg:w-115 bg-white rounded-4xl pl-7 
-                           flex flex-col justify-center items-start gap-4 p-4 my-4 
-                           transition-transform duration-300 hover:scale-105"
-              >
-                <img src={item.icon} alt={item.title} className="pb-2 w-10 sm:w-12 lg:w-auto" />
-                <h6 className="text-2xl font-bold sm:text-xl xs:text-lg">{item.title}</h6>
-                <p className="text-lg text-gray-400 sm:text-base xs:text-sm">{item.des}</p>
-                <div className="cursor-pointer group">
-                  <h5 className="flex justify-center items-center gap-2 text-md font-semibold group-hover:text-[#6D30FB] sm:text-sm">
-                    Read More <FaArrowRightLong size={20} className="mt-1" />
-                  </h5>
-                  <div className="h-[1px] mt-1 w-28 bg-black transition-all duration-300 group-hover:w-22 group-hover:bg-[#6D30FB]"></div>
-                </div>
-              </div>
-            </Link>
-          ))}
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-start gap-6 lg:gap-6 mt-14 lg:ml-4 ">
+
+  {serviceCards.map((item, index) => (
+    <Link to={`/services/${item.slug}`} key={index}>
+      <div
+        className="h-76 w-full lg:w-104 bg-gray-50 rounded-4xl pl-7 
+                   flex flex-col justify-center items-start gap-4 p-4 my-4 
+                   transition-transform duration-300 hover:scale-105 lg:p-6 "
+      >
+        <img src={item.icon} alt={item.title} className="pb-2 w-10 sm:w-12 lg:w-12 lg:h-12 text-purple-500" />
+        <h6 className="text-2xl font-bold sm:text-xl xs:text-lg lg:text-xl">{item.title}</h6>
+        <p className="text-lg text-gray-400 sm:text-base xs:text-sm lg:text-base">{item.des}</p>
+        <div className="cursor-pointer group">
+          <h5 className="flex justify-center items-center gap-2 text-md font-semibold group-hover:text-[#6D30FB] sm:text-sm">
+            Read More <FaArrowRightLong size={20} className="mt-1" />
+          </h5>
+          <div className="h-[1px] mt-1 w-28 bg-black transition-all duration-300 group-hover:w-22 group-hover:bg-[#6D30FB]"></div>
         </div>
+      </div>
+    </Link>
+  ))}
+</div>
+
 
       </section>
     </>

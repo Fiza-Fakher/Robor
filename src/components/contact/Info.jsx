@@ -16,7 +16,7 @@ function Info() {
             <h1 className='font-bold text-4xl sm:text-6xl lg:text-6xl pt-4 text-center'>Contact Information</h1>
             <div className='flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10 mt-10'>
                 {contactCards.map((items,index)=>(
-                    <div key={index} className='h-80 w-full sm:w-84 rounded-xl border border-gray-200 shadow-xl flex flex-col justify-center items-center transform transition duration-500 hover:scale-105'>
+                    <div key={index} className='h-80 lg:w-70 sm:w-84 rounded-xl border border-gray-200 shadow-xl flex flex-col justify-center items-center transform transition duration-500 hover:scale-105'>
                         <div className='h-24 w-24 bg-[#6D30FB] rounded-full flex justify-center items-center '>{items.icon}</div>
                         <h2 className='font-semibold text-3xl mt-6 text-center'>{items.title}</h2>
                         <h5 className='text-lg text-gray-400 text-center mt-4'>{items.des}</h5>

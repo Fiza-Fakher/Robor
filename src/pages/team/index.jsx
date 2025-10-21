@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../../components/team/Hero'
 import Team from '../../components/team/Team'
 
-function Team() {
+function TeamPage() {
   return (
     <>
     <Hero/>
@@ -11,4 +11,4 @@ function Team() {
   )
 }
 
-export default Team;
+export default TeamPage;

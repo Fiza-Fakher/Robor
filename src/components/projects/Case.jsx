@@ -33,7 +33,7 @@ function Case() {
   </div>
 </section>
 
-   <section className="grid grid-cols-2 gap-8 cursor-pointer pb-10">
+   <section className="grid grid-cols-2 gap-8 cursor-pointer pb-10 lg:ml-4 lg:mr-4">
   {projectCards.map((items, index) => (
     <div
       key={index}

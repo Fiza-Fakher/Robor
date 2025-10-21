@@ -640,3 +640,15 @@ export const aboutTeam=[
       author: "Robor",
     },
   ];
+  export const aboutUsCards = [
+    {
+      icon: "/homepage/about_feature_icon1.svg",
+      title: "100% Customers Satisfaction",
+      des: "We bring a team of experienced AI specialists, data scientists, and industry experts committed to pushing boundaries.",
+    },
+    {
+      icon: "/homepage/about_feature_icon2.svg",
+      title: "Quality Assurance Guarantee",
+      des: "We bring a team of experienced AI specialists, data scientists, and industry experts committed to pushing boundaries.",
+    },
+  ];

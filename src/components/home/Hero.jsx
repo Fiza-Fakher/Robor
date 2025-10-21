@@ -28,12 +28,12 @@ function Hero() {
 
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-10">
-          <Link to='/services'><button className="h-[50px] sm:h-[55px] w-[170px] sm:w-[186px] flex justify-center items-center gap-3 sm:gap-4 text-base sm:text-lg bg-[#6D30FB] text-white rounded-full hover:bg-white hover:text-[#6D30FB] border-2 sm:border-4 border-[#6D30FB] transition-all duration-300 cursor-pointer">
+          <Link to='/services'><button className="h-[50px] sm:h-[55px] w-[170px] sm:w-[186px] flex justify-center items-center gap-3 sm:gap-4 text-base sm:text-lg bg-[#6D30FB] text-white rounded-full hover:bg-white hover:text-[#6D30FB]  transition-all duration-300 cursor-pointer">
             Discover More <FaArrowRightLong />
           </button></Link>
 
           <Link to="/contact">
-            <button className="h-[50px] sm:h-[55px] w-[160px] sm:w-[180px] flex justify-center items-center gap-3 sm:gap-4 text-base sm:text-lg text-white rounded-full border-2 sm:border-4 border-white hover:bg-white hover:text-[#6D30FB] transition-all duration-300 cursor-pointer">
+            <button className="h-[50px] sm:h-[55px] w-[160px] sm:w-[180px] flex justify-center items-center gap-3 sm:gap-4 text-base sm:text-lg text-white rounded-full border-2 sm:border-2 border-white hover:bg-white hover:text-[#6D30FB] transition-all duration-300 cursor-pointer">
               Contact Us <FaArrowRightLong />
             </button>
           </Link>

@@ -12,15 +12,17 @@ import Blog from "../../components/home/Blog"
 function Home() {
   return (
     <>
-     <Hero/>
-     <WhoWeAre/>
-     <Services />
+    <div className="overflow-x-hidden w-full"> 
+      <Hero />
+      <WhoWeAre />
+      <Services />
       <WhyChoseUs />
-       <Case />
-      <Technology /> 
-      <FAQ /> 
+      <Case />
+      <Technology />
+      <FAQ />
       <Pricing />
       <Blog />
+    </div>
     </>
   );
 }

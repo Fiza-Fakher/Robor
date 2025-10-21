@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa6
 
 function Team() {
   return (
-    <section className="pt-10 mb-20 px-4 sm:px-6 lg:px-12 flex flex-col justify-center items-center">
+    <section className="pt-10 mb-20 px-4 sm:px-6 lg:pt-20 lg:px-12 flex flex-col justify-center items-center">
       <h2 className="text-4xl sm:text-5xl font-semibold mb-10 text-center">
         Our Expert Creative Minds
       </h2>

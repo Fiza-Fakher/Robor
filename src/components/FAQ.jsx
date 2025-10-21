@@ -45,7 +45,7 @@ function FAQ() {
           {faq.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col p-4 sm:p-6 items-start justify-center bg-[#F5F5F5] w-full sm:w-[95%] md:w-[98%] rounded-xl mt-4 sm:mt-6 cursor-pointer transition-all"
+              className="flex flex-col p-4 sm:p-6 items-start justify-center bg-[#F5F5F5] w-full sm:w-[95%] md:w-[98%] rounded-xl mt-4 sm:mt-6 cursor-pointer transition-all lg:w-full"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center w-full">
