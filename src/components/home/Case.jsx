@@ -1,0 +1,92 @@
+import React from "react";
+import { GoArrowUpRight } from "react-icons/go";
+import { projectCards } from "../../constants/index";
+import { Link } from "react-router-dom";
+
+function Case() {
+  return (
+    <>
+      
+      <section className="bg-white relative flex flex-col justify-center items-center pb-20 px-4 overflow-hidden">
+        
+        <h1
+          className="absolute z-0 font-bold text-gray-100 leading-none 
+          text-[320px] xl:text-[320px] lg:text-[260px] md:text-[180px] sm:text-[120px] xs:text-[80px]
+          top-1/2 -translate-y-1/2 text-center w-full select-none"
+        >
+          Case
+        </h1>
+
+        
+        <div className="z-20 flex justify-center items-center flex-col pt-30 text-center px-4">
+          
+          <div className="flex gap-6 text-[#6D30FB] justify-center items-center flex-wrap">
+            <div className="h-[2px] w-16 bg-[#6D30FB]"></div>
+            <h6 className="text-xl uppercase md:text-lg sm:text-base xs:text-sm">
+              Case Study
+            </h6>
+            <div className="h-[1px] w-16 bg-[#6D30FB]"></div>
+          </div>
+
+          {/* Title */}
+          <h1 className="text-6xl font-bold py-10 xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl">
+            AI Projects Case Study
+          </h1>
+
+          
+          <h5 className="flex flex-col justify-center items-center text-gray-400 text-xl md:text-lg sm:text-base xs:text-sm px-4 sm:px-2">
+            <span>
+              An AI agency is a specialized organization dedicated to helping
+              businesses and
+            </span>
+            <span>
+              organizations leverage artificial intelligence to achieve their
+              goals.
+            </span>
+          </h5>
+        </div>
+      </section>
+
+      
+      <section className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8 cursor-pointer pb-20 px-6">
+        {projectCards.map((items, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center mt-4 group relative"
+          >
+            
+            <div className="relative overflow-hidden rounded-3xl w-full">
+              <img
+                src={items.img}
+                alt=""
+                className="rounded-3xl transition-all duration-300 group-hover:blur-xs w-full object-cover"
+              />
+
+              
+              <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <Link to={`/projects/${items.slug}`}>
+                  <div className="w-16 h-16 rounded-full bg-white/40 backdrop-blur-md flex justify-center items-center transition-all duration-300 hover:bg-[#6D30FB]">
+                    <GoArrowUpRight size={28} className="text-white" />
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            {/* Type Tag */}
+            <div className="flex justify-center items-center w-44 h-10 gap-2 border border-gray-400 text-gray-400 rounded-full mt-4">
+              <div className="w-3 h-3 rounded-full bg-gray-400"></div>
+              <h4 className="text-sm sm:text-base">{items.type}</h4>
+            </div>
+
+            {/* Title */}
+            <h2 className="text-2xl font-bold pt-4 sm:text-xl xs:text-lg">
+              {items.title}
+            </h2>
+          </div>
+        ))}
+      </section>
+    </>
+  );
+}
+
+export default Case;
