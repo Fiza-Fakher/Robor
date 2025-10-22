@@ -34,7 +34,7 @@ function OurServices() {
           {serviceCards.map((item, index) => (
             <Link to={`/services/${item.slug}`} key={index}>
               <div
-                className="h-76 w-full lg:w-115 bg-white rounded-4xl pl-7 
+                className="h-76 lg:w-102 bg-white rounded-4xl pl-7 
                            flex flex-col justify-center items-start gap-4 p-4 my-4 
                            transition-transform duration-300 hover:scale-105"
               >

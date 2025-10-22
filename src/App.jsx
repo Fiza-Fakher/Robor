@@ -2,7 +2,7 @@ import './index.css'
 
 import Home from "./pages/home/index";
 import About from "./pages/about/index";
-import Services from './components/home/Services';
+import Services from './pages/service/index';
 import ServiceDetail from './pages/service-detail';
 import Projects from "./pages/projects/index";
 import ProjectDetail from './pages/project-detail';
