@@ -27,7 +27,7 @@ const Loader = ({ onFinish }) => {
           tracking-[2vw]
         "
       >
-        R O B O R
+       E N V O Y
       </h1>
 
       <style jsx>{`

@@ -20,9 +20,9 @@ function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="LOGO"
-            className="w-28 sm:w-32 md:w-36 cursor-pointer"
+            className="w-28 lg:w-20 sm:w-32 md:w-36 cursor-pointer"
           />
         </div>
 
