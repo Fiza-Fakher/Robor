@@ -36,7 +36,7 @@ function Footer() {
             {/* --- Column 1: Logo & Info --- */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="/logo.svg" alt="logo" className="" />
+                <img src="/logo.png" alt="logo" className="" />
                 
               </div>
               <p className="text-gray-300 leading-relaxed text-[15px]">
